@@ -1,0 +1,29 @@
+<div class="login-container">
+  <h2>Login</h2>
+  <div class="login-form">
+      <form #f="ngForm" (ngSubmit)="loginHandler(f)"  >
+
+          <span class="input-label">Username</span>
+          <br>
+          <input class="form-input" name="name" ngModel required #first="ngModel" type="text">
+           <br><br>
+          <span class="input-label">Password</span>
+          <br>
+          <input  class="form-input" name="email" ngModel required #second="ngModel" type="email">
+          <br>
+          <a href="">Don't have an account?</a>
+        
+          <div class="btn-container">
+    
+            <button type="submit" mat-raised-button color="primary">Login</button>
+            <button ng-click="getData">Get req data </button>
+          </div>
+          
+        </form> 
+      
+
+  </div>
+
+
+</div>
+ 
